@@ -22,12 +22,8 @@ void error(string msg)
 }
 void signalHandler( int signum )
 {
-    cout << "Interrupt signal (" << signum << ") received.\n";
-    printf("downloaded %d number of bytes so far ", bytecount);
-    // cleanup and close up stuff here  
-    // terminate program  
-
-   exit(signum);  
+    printf("downloaded %d number of bytes so far  \n ", bytecount);   
+    exit(signum);  
 
 }
 
